@@ -1,0 +1,41 @@
+---
+layout: post
+title: Exemplos de clustering, classificação e regras de associação usando o R
+date: 2013-07-24 17:40:23.000000000 -03:00
+categories:
+- Big Data
+tags:
+- agrupamento
+- aprendizagem de máquina
+- árvores de decisão
+- clustering
+- machine learning
+- R
+- Random Forest
+- regras de associação
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: fabricio.barth@gmail.com
+  display_name: Fabrício Barth
+  first_name: Fabrício
+  last_name: Barth
+---
+<div>Neste post eu quero compartilhar alguns scripts meus escritos em R e que estão públicos. A maioria dos scripts está disponibilizada em <a href="http://rpubs.com/fbarth">http://rpubs.com/fbarth</a>. São exercícios simples, mas que exemplificam o uso de <a href="http://fbarth.net.br/materiais/docs/am/agrupamento.pdf">agrupamentos planos e hierárquicos</a>, <a href="http://fbarth.net.br/materiais/docs/am/arvoresDecisao.pdf">algoritmos indutores de árvores de decisão</a>, <a href="http://www.stat.berkeley.edu/~breiman/RandomForests/">Random Forest</a> e <a href="http://fbarth.net.br/materiais/docs/aula05.pdf">identificação de regras de associação</a>.</div>
+<div></div>
+<div>Eu escrevi estes relatórios usando <a href="http://www.rstudio.com/ide/docs/authoring/using_markdown">Rmarkdown</a> e compilando eles com <a href="http://yihui.name/knitr/">Knitr</a>. É muito prático, principalmente se utilizado com o <a href="http://www.rstudio.org/" target="_blank">http://www.rstudio.org/</a>. Os relatórios apresentados abaixo ou são utilizados em aulas práticas da disciplina de Sistemas Inteligentes ou em cursos de extensão na <a href="http://www.bandtec.com.br/">BandTec</a>:</div>
+<div>
+<ul>
+<li><span style="line-height: 13px;"><a href="http://rpubs.com/fbarth/labAlgoritmosClustering"><strong>Laboratório sobre algoritmos de clustering plano</strong></a>: neste relatório eu apresento dois exemplos que utilizam o algoritmo Kmeans. O primeiro exemplo (bem didático) utiliza o dataset iris. O segundo exemplo (um pouco mais próximo de uma situação real) utiliza um dataset com informações sobre abalos sísmicos em tempo real. Em ambos os casos são apresentados questões relacionadas ao pré-processamento dos dados, utilização da implementação do algoritmo Kmeans no R e identificação do número de clusters ideais usando o método <em>elbow</em>. </span></li>
+<li><strong><a href="http://rpubs.com/fbarth/labClusteringHierarquico">Laboratório sobre algoritmos de clustering hierárquico</a></strong>: neste relatório eu apresento como construir <a href="http://en.wikipedia.org/wiki/Dendrogram">dendrograms</a> a partir de um dataset didático.</li>
+<li><strong><a href="http://rpubs.com/fbarth/exemploRandomForest">Exemplo de uso do algoritmo Random Forest</a></strong>: o algoritmo Random Forest (que pode ser utilizado para problemas de classificação, regressão e clustering) tem chamado cada vez mais a atenção dos profissionais da área de Big Data. Neste relatório é apresentado um exemplo bem didático de classificação usando a implementação do pacote <a href="http://cran.r-project.org/web/packages/randomForest/index.html">randomForest</a> do R. Ao longo do relatório são apresentados alguns gráficos que ilustram o potencial do algoritmo Random Forest em tarefas de classificação.</li>
+<li><strong><a href="http://rpubs.com/fbarth/arvoreDecisao">Exemplo de uso de algoritmos indutores de árvores de decisão</a></strong>: o algoritmo Random Forest gera uma floresta de árvores de decisão. Desta forma, seria muito incoerente da minha parte apresentar um exemplo que usa o algoritmo Random Forest e não apresentar exemplos de uso dos algoritmos C4.5,  J48 ou até mesmo o velho ID3. Neste relatório é apresentado a execução de um método para criação de modelo preditivo usando algoritmos indutores de árvore de decisão.</li>
+<li><strong><a href="http://rpubs.com/fbarth/regrasAssociacao">Exemplo de regras de associação em uma base de transações</a></strong>: este relatório apresenta a análise de padrões frequentes em uma base de transações. Também é um exemplo bem didático, mas já dá para ter uma idéia sobre o seu modo de funcionamento.</li>
+</ul>
+<p>Existem outros exemplos que eu quero apresentar. Mas para não deixar este post muito longo eu vou parar por aqui. Assim que possível, eu publico outro post com outros exemplos. Se você tiver alguma dúvida, comentário ou sugestão, por favor, envie um e-mail para fabricio dot barth at gmail dot com.</p>
+<p>Obs.: Eu tive que desabilitar a função que permite inserir comentários nos posts porque a quantidade de spam estava ficando insuportável.</p>
+</div>

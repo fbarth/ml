@@ -1,0 +1,31 @@
+---
+layout: post
+title: Ensino de aprendizagem de máquina utilizando dados reais
+date: 2014-03-29 11:23:34.000000000 -03:00
+categories:
+- Big Data
+- Computação
+- Educação
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: fabricio.barth@gmail.com
+  display_name: Fabrício Barth
+  first_name: Fabrício
+  last_name: Barth
+---
+<p>No dia 20 de março de 2014 eu iniciei o tema Aprendizagem de Máquina na disciplina de Sistemas Inteligentes. Neste dia eu apresentei para a turma os conceitos básicos sobre Aprendizagem de Máquina, Supervisionada e Não Supervisionada, e a linguagem de programação e ambiente R que vamos utilizar até o final do tema. Foi uma aula expositiva que utilizou este material: <a href="http://fbarth.net.br/materiais/docs/am/aIntroducao.pdf">Aprendizagem de Máquina</a> e <a href="http://fbarth.net.br/materiais/docs/am/aprocessamentoDados.pdf">Processamento de Dados no R</a>.</p>
+<p>Na aula do dia 27 de março eu propus aos alunos capturar dados sobre imóveis (apartamentos na cidade de São Paulo) disponíveis em sites Web para avaliar se é possível criar um modelo de regressão capaz de definir o preço de um imóvel dado alguns atributos (área, quantidade de quartos, vagas para carros, o bairro do imóvel, entre outros).</p>
+<p>Utilizamos a ferramenta <a href="http://www.kimonolabs.com/">www.kimonolabs.com</a> para fazer um wrapper de um site de imóveis. No dia 27 de março fizemos a aquisição de dados sobre imóveis da cidade de São Paulo, organizamos o projeto no <a href="https://github.com/fbarth/predictApartmentPrice">GitHub</a>, configuramos o ambiente de desenvolvimento (<a href="https://www.rstudio.com/">RStudio</a>) e fazemos os primeiros scripts em <a href="http://www.r-project.org/">R</a> para a aquisição e pré-processamento dos dados. O resultado deste trabalho pode ser visto no commit <a href="https://github.com/fbarth/predictApartmentPrice/tree/162cb390045925736ba1002c7391217b1055eec7">162cb39</a> do projeto <a href="https://github.com/fbarth/predictApartmentPrice">https://github.com/fbarth/predictApartmentPrice</a>.</p>
+<p>Quais são as vantagens e desvantagens ao utilizar uma base de dados real ao invés de utilizar bases de dados acadêmicas (por exemplo, <a href="http://archive.ics.uci.edu/ml/">http://archive.ics.uci.edu/ml/</a>)?</p>
+<ul>
+<li>Gastamos 4 horas de aula da disciplina sem discutir técnicas e algoritmos de aprendizagem de máquina.</li>
+<li>Mas, gastamos 4 horas entendendo as dificuldades com a aquisição e pré-processamento dos dados - algo que é pouco discutido na área de Aprendizagem de Máquina e Data Mining, mas na prática é um grande problema.</li>
+<li>Talvez, os alunos fiquem mais empolgados com a análise deste tipo de dado. Não sei. Só sei que eu acho mais legal.</li>
+</ul>
+<p>Pretendo descrever neste blog a evolução deste projeto.</p>

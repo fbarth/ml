@@ -1,0 +1,34 @@
+---
+layout: post
+title: Meta buscador multimídia
+date: 2010-08-14 23:25:38.000000000 -03:00
+categories:
+- Computação
+tags:
+- folksonomia
+- meta buscador
+- multimídia
+- recuperação de informação
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: fabricio.barth@gmail.com
+  display_name: Fabrício Barth
+  first_name: Fabrício
+  last_name: Barth
+---
+<p>No ano passado a <a href="mailto:jessica.cintra@gmail.com">Jéssica</a> e o <a href="mailto:robson.bacarin@gmail.com">Robson</a>, sob minha orientação, desenvolveram, no Trabalho de Conclusão de Curso (TCC) deles, um meta buscador multimídia.  O conceito de meta buscador é simples. Trata-se de um componente que recebe uma consulta, repassa esta consulta para outros buscadores e retorna os resultados obtidos ao usuário que digitou a consulta.</p>
+<p>O meta buscador desenvolvido pela Jéssica e pelo Robson é multimídia porque repassa a consulta e trata os resultados do <a href="http://www.youtube.com">YouTube</a>, <a href="http://www.flickr.com/">Flickr</a>, <a href="http://www.yahoo.com">Yahoo</a> e <a href="http://delicious.com/">Delicious</a>. Ou seja, para uma só consulta o meta buscador retorna fotos, vídeos e documentos.</p>
+<p>No entanto, o objetivo do TCC não foi desenvolver um meta buscador multimídia. O objetivo do TCC, segundo o que consta na introdução foi: <em>"o objetivo deste trabalho é desenvolver um método de expansão de consultas para sistemas de recuperação de informação multimídia na Web que leva em consideração tags de sistemas de folksonomia"</em> [<a href="http://fbarth.net.br/docs/tccs/folksonomia2009.pdf">1</a>].</p>
+<p>Expansão de consultas é um método amplamente utilizado na área de Recuperação de Informação (RI), utilizando principalmente ontologias e taxonomias para isso [<a href="http://fbarth.net.br/docs/bar2009.pdf">2</a>, <a href="http://fbarth.net.br/docs/bar2008c.pdf">3</a>]. O nosso objetivo com o TCC da Jésica e do Robson era verificar o quanto <em>tags</em> de um sistema de <strong>folksonomia</strong> poderiam ser utilizadas na expansão de consultas.</p>
+<p>Uma pessoa digita uma consulta; cada termo da consulta é procurado em um sistema de folksonomia [<a href="http://www.adammathes.com/academic/computer-mediated-communication/folksonomies.html">4</a>] (i.e., delicious); procura-se por sinônimos neste sistema de folksonomia, e; cada sinônimo encontrado é adicionado à consulta formando-se a consulta expandida. Trata-se de um algoritmo simples, mas nós queríamos ver a aplicabilidade disto, ou seja, se a eficiência da consulta expandida é maior ou não que a eficiência da consulta original.</p>
+<p>Para tanto, foi desenvolvido o meta buscado multimídia chamado <a href="http://www.jessicacintra.com.br/jeh/folkaliza/Home/Default.aspx">Folkaliza</a>. Um meta buscador que expande a consulta original do usuário usando <em>tags</em> do delicious e submete a consulta expandida ao YouTube, Flickr, Delicious e Yahoo. No caso do YouTube e do Flickr os termos da consulta expandida são procurados nas meta informações dos vídeos e fotos. No caso do Delicious e Yahoo os termos da consulta expandido são utilizados nas próprios mecanismos de busca destes sites.</p>
+<p>Para validar a proposta foi utilizado um método quantitativo baseado em questionário. Trata-se de um método diferente do tradicional método de <em>benchmarking</em> utilizado na avaliação de sistemas de RI (se você desejar saber um pouco mais sobre estes métodos então dê uma olhada no capítulo 4 do texto "<a href="http://fbarth.net.br/materiais/introducaoRecuperacaoInformacao/index.html">Uma breve introdução ao tema Recuperação de Informação</a>"). Optou-se por utilizar um método baseado em questionário pois nós não tínhamos nenhuma coleção de referência para analisar.</p>
+<p>Os resultados encontrados foram otimistas: 28% das pessoas que responderam o questionário acharam os resultados retornados pelo Folkaliza ótimos e 51% acharam bons (ver figura abaixo). </p>
+<p>[caption id="attachment_190" align="aligncenter" width="167" caption="Resultado do nível de satisfação dos usuários com relação aos resultados retornados pelo Folkaliza"]<img src="assets/7.png" alt="Resultado do nível de satisfação dos usuários com relação aos resultados retornados pelo Folkaliza" title="Resultado do nível de satisfação dos usuários com relação aos resultados retornados pelo Folkaliza" width="167" height="200" class="size-full wp-image-190" />[/caption]</p>
+<p>Claro que foram realizadas outras medições. Os resultados completos, assim como detalhes de implementação, podem ser vistos no <a href="http://fbarth.net.br/docs/tccs/folksonomia2009.pdf">TCC</a> da Jésica e do Robson.</p>
+<p>Uma pergunta que surgiu ao longo do trabalho foi: <em>"O que significa realmente expandir consultas utilizando tags <strong>genéricas</strong> de um sistema de folksonomia?"</em> A palavra genéricas está grifada na pergunta anterior porque no desenvolvimento do Folkaliza foram utilizadas as <em>tags</em> de todos os usuários para a expansão da consulta de um único usuário. Em outros trabalhos [<a href="http://portal.acm.org/citation.cfm?id=1390363">5</a>] esta abordagem é implementada utilizando apenas as <em>tags</em> do próprio usuário na tentativa de personalizar a consulta. No caso do Folkaliza não. No caso do Folkaliza utiliza-se as <em>tags</em> mais frequentes no momento. Qual será o impacto disto?</p>

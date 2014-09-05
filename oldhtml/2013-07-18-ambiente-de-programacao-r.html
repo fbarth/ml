@@ -1,0 +1,33 @@
+---
+layout: post
+title: Ambiente de programação R
+date: 2013-07-18 21:07:12.000000000 -03:00
+categories:
+- Big Data
+tags:
+- big data
+- data mining
+- estatísitica
+- R
+- text mining
+- web data mining
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: fabricio.barth@gmail.com
+  display_name: Fabrício Barth
+  first_name: Fabrício
+  last_name: Barth
+---
+<p>Na maioria das situações quando você trabalha com a criação de modelos preditivos ou descritivos, você utiliza ferramentas como <a href="http://rapid-i.com/">RapidMiner</a>, <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>, <a href="http://www-01.ibm.com/software/analytics/spss/">SPSS</a>, <a href="http://www.sas.com/">SAS</a> ou <a href="http://www.r-project.org/">R</a>. Desde que eu comecei a trabalhar na <a title="VAGAS" href="http://www.vagas.com.br" target="_blank">VAGAS</a>, eu troquei ferramentas como RapidMiner, Weka e libsvm pelo R. Esta troca foi motivada porque:</p>
+<ol>
+<li>Eu estava precisando de uma ferramenta com funcionalidades tanto para a análise descritiva, quanto para a análise preditiva. O R possui uma infinidade de pacotes, a cada mês são lançados novos pacotes e a comunidade é muito ativa - muito mais que a comunidade do RapidMiner ou Weka ou SAS/SPSS, por exemplo.</li>
+<li>Eu estava com dificuldades para realizar o controle de versões dos experimentos utilizando RapidMiner e Weka. Eu sei que todos os processos definidos no RapidMiner são salvos em XML, mas nada é melhor do que um simples script escrito em R :)</li>
+<li><span style="line-height: 13px;">Eu preciso manipular datasets com milhões de registros, tanto na criação de modelos descritivos, quanto na criação de modelos preditivos. O R não é uma maravilha para trabalhar com datasets enormes. No entanto, nem RapidMiner, nem Weka e nem SAS ou SPSS são. Além disso, o R possui alguns pacotes para computação paralela e é muito fácil integrar scripts do R com outros scripts escritos em Python ou Ruby ou Bash. Ou seja, é possível desenvolver soluções bem otimizadas [estilo map reduce] utilizando os recursos [de pipe] do próprio sistema operacional (só funciona com sistema operacional de verdade - *unix).</span></li>
+<li>Eu preciso criar relatórios com gráficos bem bonitos em vários formatos (por exemplo: html, pdf ou ppt). Com o R é possível gerar bons relatórios em HTML utilizando o <a href="http://yihui.name/knitr/">knitr</a> ou documentos em pdf com o <a href="http://www.latex-project.org/">LaTeX</a>, por exemplo.</li>
+</ol>
+<p>Resumo da ópera: não perdi tempo aprendendo a utilizar o R. Atualmente, o R é com certeza o ambiente de programação que eu mais utilizo no dia-a-dia. Se você está com curiosidade sobre o que é possível fazer com esta linguagem de programação então da uma olhada <a href="http://rpubs.com/fbarth/">aqui</a>.</p>
