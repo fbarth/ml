@@ -1,0 +1,13 @@
+# Site settings
+title: Aprendizagem de máquina, big data e computação cognitiva
+email: fabricio.barth@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Neste espaço você irá encontrar textos sobre aprendizagem de máquina,
+  big data e computação cognitiva.
+baseurl: "/ml" # the subpath of your site, e.g. /blog/
+url: "http://fbarth.github.io" # the base hostname & protocol for your site
+twitter_username: fbarth
+github_username:  fbarth
+
+# Build settings
+markdown: kramdown
