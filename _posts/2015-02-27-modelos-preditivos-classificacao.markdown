@@ -9,11 +9,13 @@ O objetivo deste *post* é apresentar alguns exemplos de Modelagem Preditiva par
 
 Um sistema de aprendizagem de máquina supervisionado é um programa capaz de induzir uma descrição de um conceito a partir de um conjunto de exemplos previamente conhecidos e rotulados com suas respectivas classes. Essa descrição é uma generalização dos exemplos fornecidos ao sistema e é, normalmente, referenciada na literatura como hipótese. O objetivo principal de uma hipótese é, dado um novo exemplo cuja classe é desconhecida, predizer sua classe. 
 
+Abordagem genérica para construção de classificadores [[1]](http://www-users.cs.umn.edu/~kumar/dmbook/index.php)
+![](../../../../../assets/mlApproach.png)
 
 Exemplo de uso do Algoritmo Random Forest
 -----------------------------------------
 
-Neste exemplo foi utlizado um [dataset](https://archive.ics.uci.edu/ml/datasets/Iris) com 150 exemplos e 3 classes (tipos) da [planta iris](http://en.wikipedia.org/wiki/Iris_%28plant%29). Trata-se de um dataset clássico na área de *data mining* e *machine learning*. Para criar um modelo que consegue separar as três classes foi utilizado o algoritmo [Random Forest](http://www.bios.unc.edu/~dzeng/BIOS740/randomforest.pdf). O algoritmo Random Forest é um tipo de *ensemble learning*, método que gera muitos classificadores e agrega o seu resultado. No caso do Random Forest, ele gera múltiplas árvores de decisão que depois são utilizadas na classificação de novos objetos. O script utilizado neste exemplo pode ser acessado [aqui](http://rpubs.com/fbarth/exemploRandomForest). Neste script, o primeiro modelo testado é:
+Neste [exemplo](http://rpubs.com/fbarth/exemploRandomForest) foi utlizado um [dataset](https://archive.ics.uci.edu/ml/datasets/Iris) com 150 exemplos e 3 classes (tipos) da [planta iris](http://en.wikipedia.org/wiki/Iris_%28plant%29). Trata-se de um dataset clássico na área de *data mining* e *machine learning*. Para criar um modelo que consegue separar as três classes foi utilizado o algoritmo [Random Forest](http://www.bios.unc.edu/~dzeng/BIOS740/randomforest.pdf). O algoritmo Random Forest é um tipo de *ensemble learning*, método que gera muitos classificadores e agrega o seu resultado. No caso do Random Forest, ele gera múltiplas árvores de decisão que depois são utilizadas na classificação de novos objetos. O script utilizado neste exemplo pode ser acessado [aqui](http://rpubs.com/fbarth/exemploRandomForest). Neste script, o primeiro modelo testado é:
 
 <code>
 forestIris <- randomForest(
